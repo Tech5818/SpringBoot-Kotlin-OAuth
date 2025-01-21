@@ -21,4 +21,5 @@ class HomeController(
 
         return "index";
     }
+
 }

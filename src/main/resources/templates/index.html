@@ -8,6 +8,7 @@
 <div th:if="${userName}">
     <a th:href="@{/logout}" role="button">로그아웃</a>
     <label th:text="|${userName}님|"></label>
+    <a href="/rest/">rest로 보기</a>
 </div>
 <div th:if="!${userName}">
     <a th:href="@{/oauth2/authorization/google}" role="button">Google Login</a>

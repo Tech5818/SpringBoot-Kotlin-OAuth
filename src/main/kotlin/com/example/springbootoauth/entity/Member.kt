@@ -1,5 +1,6 @@
 package com.example.springbootoauth.entity
 
+import com.example.springbootoauth.dto.UserDTO
 import com.example.springbootoauth.entity.enums.Role
 import jakarta.persistence.*
 import org.jetbrains.annotations.NotNull
@@ -35,4 +36,8 @@ data class Member(
     fun getRoleKey(): String {
         return this.role.key
     }
+}
+
+fun Member.toDTO(): UserDTO {
+    return UserDTO(id!!, name, email, picture, role)
 }
