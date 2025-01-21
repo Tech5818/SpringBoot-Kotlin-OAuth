@@ -40,4 +40,5 @@ out/
 .kotlin
 
 ### Properties ###
-application.properties
+application-db.properties
+application-oauth2.properties
